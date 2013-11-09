@@ -9,8 +9,8 @@ var RatingDemoCtrl = function ($scope) {
   };
 
   $scope.ratingStates = [
-    {stateOn: 'glyphicon-ok', stateOff: 'icon-ok-circle'},
-    {stateOn: 'glyphicon-star', stateOff: 'glyphicon-ok-circle'},
+    {stateOn: 'glyphicon-ok', stateOff: 'glyphicon-ok-circle'},
+    {stateOn: 'glyphicon-star', stateOff: 'glyphicon-star-empty'},
     {stateOn: 'glyphicon-heart', stateOff: 'glyphicon-ban-circle'},
     {stateOn: 'glyphicon-heart'},
     {stateOff: 'glyphicon-off'}

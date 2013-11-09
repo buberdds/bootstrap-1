@@ -22,7 +22,7 @@ describe('rating directive', function () {
     var stars = getStars();
     var state = [];
     for (var i = 0, n = stars.length; i < n; i++) {
-      state.push( (stars.eq(i).hasClass(classOn || 'icon-star') && ! stars.eq(i).hasClass(classOff || 'icon-star-empty')) );
+      state.push( (stars.eq(i).hasClass(classOn || 'glyphicon-star') && ! stars.eq(i).hasClass(classOff || 'glyphicon-star-empty')) );
     }
     return state;
   }
@@ -126,8 +126,8 @@ describe('rating directive', function () {
 
   describe('custom states', function() {
     beforeEach(inject(function() {
-      $rootScope.classOn = 'icon-ok-sign';
-      $rootScope.classOff = 'icon-ok-circle';
+      $rootScope.classOn = 'glyphicon-ok-sign';
+      $rootScope.classOff = 'glyphicon-ok-circle';
       element = $compile('<rating value="rate" state-on="classOn" state-off="classOff"></rating>')($rootScope);
       $rootScope.$digest();
     }));
